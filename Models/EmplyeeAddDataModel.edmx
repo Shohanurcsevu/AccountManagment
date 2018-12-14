@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AccountManagmentModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="EmployeeRegister">
+          <Key>
+            <PropertyRef Name="EID" />
+          </Key>
+          <Property Name="EID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="FatherName" Type="nvarchar" MaxLength="50" />
+          <Property Name="MotherName" Type="nvarchar" MaxLength="50" />
+          <Property Name="PresentAddress" Type="nvarchar" MaxLength="50" />
+          <Property Name="PermanentAddress" Type="nvarchar" MaxLength="50" />
+          <Property Name="SSC Year" Type="nvarchar" MaxLength="50" />
+          <Property Name="SSC Result" Type="nvarchar" MaxLength="50" />
+          <Property Name="SSc Board" Type="nvarchar" MaxLength="50" />
+          <Property Name="HSC Year" Type="nvarchar" MaxLength="50" />
+          <Property Name="HSC Result" Type="nvarchar" MaxLength="50" />
+          <Property Name="HSC Board" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gradute University" Type="nvarchar" MaxLength="50" />
+          <Property Name="Passing Year" Type="nvarchar" MaxLength="50" />
+          <Property Name="Result" Type="nvarchar" MaxLength="50" />
+          <Property Name="Grade" Type="nvarchar" MaxLength="50" />
+          <Property Name="Salary Scale" Type="nvarchar" MaxLength="50" />
+          <Property Name="Commision Percentage" Type="nvarchar" MaxLength="50" />
+          <Property Name="Increment" Type="nvarchar" MaxLength="50" />
+          <Property Name="Birth Date" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+          <Property Name="Married or Unmarried" Type="nvarchar" MaxLength="50" />
+          <Property Name="Blood Group" Type="nvarchar" MaxLength="50" />
+          <Property Name="Religion" Type="nvarchar" MaxLength="50" />
+          <Property Name="Nationality" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone Number" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="AccountManagmentModel2StoreContainer">
+          <EntitySet Name="EmployeeRegister" EntityType="Self.EmployeeRegister" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AccountManagmentModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="EmployeeRegister">
+          <Key>
+            <PropertyRef Name="EID" />
+          </Key>
+          <Property Name="EID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FatherName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MotherName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PresentAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PermanentAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SSC_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SSC_Result" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SSc_Board" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HSC_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HSC_Result" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HSC_Board" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gradute_University" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Passing_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Result" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Grade" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Salary_Scale" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Commision_Percentage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Increment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Birth_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Married_or_Unmarried" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Blood_Group" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Religion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nationality" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Phone_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="AccountManagmentEntities4" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EmployeeRegisters" EntityType="Self.EmployeeRegister" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AccountManagmentModel2StoreContainer" CdmEntityContainer="AccountManagmentEntities4">
+          <EntitySetMapping Name="EmployeeRegisters">
+            <EntityTypeMapping TypeName="AccountManagmentModel2.EmployeeRegister">
+              <MappingFragment StoreEntitySet="EmployeeRegister">
+                <ScalarProperty Name="EID" ColumnName="EID" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+                <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+                <ScalarProperty Name="PresentAddress" ColumnName="PresentAddress" />
+                <ScalarProperty Name="PermanentAddress" ColumnName="PermanentAddress" />
+                <ScalarProperty Name="SSC_Year" ColumnName="SSC Year" />
+                <ScalarProperty Name="SSC_Result" ColumnName="SSC Result" />
+                <ScalarProperty Name="SSc_Board" ColumnName="SSc Board" />
+                <ScalarProperty Name="HSC_Year" ColumnName="HSC Year" />
+                <ScalarProperty Name="HSC_Result" ColumnName="HSC Result" />
+                <ScalarProperty Name="HSC_Board" ColumnName="HSC Board" />
+                <ScalarProperty Name="Gradute_University" ColumnName="Gradute University" />
+                <ScalarProperty Name="Passing_Year" ColumnName="Passing Year" />
+                <ScalarProperty Name="Result" ColumnName="Result" />
+                <ScalarProperty Name="Grade" ColumnName="Grade" />
+                <ScalarProperty Name="Salary_Scale" ColumnName="Salary Scale" />
+                <ScalarProperty Name="Commision_Percentage" ColumnName="Commision Percentage" />
+                <ScalarProperty Name="Increment" ColumnName="Increment" />
+                <ScalarProperty Name="Birth_Date" ColumnName="Birth Date" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Married_or_Unmarried" ColumnName="Married or Unmarried" />
+                <ScalarProperty Name="Blood_Group" ColumnName="Blood Group" />
+                <ScalarProperty Name="Religion" ColumnName="Religion" />
+                <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+                <ScalarProperty Name="Phone_Number" ColumnName="Phone Number" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

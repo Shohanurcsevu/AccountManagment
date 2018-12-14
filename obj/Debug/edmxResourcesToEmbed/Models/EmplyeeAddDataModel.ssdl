@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AccountManagmentModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EmployeeRegister">
+    <Key>
+      <PropertyRef Name="EID" />
+    </Key>
+    <Property Name="EID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="FatherName" Type="nvarchar" MaxLength="50" />
+    <Property Name="MotherName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PresentAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="PermanentAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="SSC Year" Type="nvarchar" MaxLength="50" />
+    <Property Name="SSC Result" Type="nvarchar" MaxLength="50" />
+    <Property Name="SSc Board" Type="nvarchar" MaxLength="50" />
+    <Property Name="HSC Year" Type="nvarchar" MaxLength="50" />
+    <Property Name="HSC Result" Type="nvarchar" MaxLength="50" />
+    <Property Name="HSC Board" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gradute University" Type="nvarchar" MaxLength="50" />
+    <Property Name="Passing Year" Type="nvarchar" MaxLength="50" />
+    <Property Name="Result" Type="nvarchar" MaxLength="50" />
+    <Property Name="Grade" Type="nvarchar" MaxLength="50" />
+    <Property Name="Salary Scale" Type="nvarchar" MaxLength="50" />
+    <Property Name="Commision Percentage" Type="nvarchar" MaxLength="50" />
+    <Property Name="Increment" Type="nvarchar" MaxLength="50" />
+    <Property Name="Birth Date" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+    <Property Name="Married or Unmarried" Type="nvarchar" MaxLength="50" />
+    <Property Name="Blood Group" Type="nvarchar" MaxLength="50" />
+    <Property Name="Religion" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nationality" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone Number" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="AccountManagmentModel2StoreContainer">
+    <EntitySet Name="EmployeeRegister" EntityType="Self.EmployeeRegister" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

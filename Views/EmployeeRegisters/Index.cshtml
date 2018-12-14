@@ -1,0 +1,197 @@
+﻿@model IEnumerable<AccountManagment.Models.EmployeeRegister>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FatherName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MotherName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PresentAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PermanentAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SSC_Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SSC_Result)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SSc_Board)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HSC_Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HSC_Result)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HSC_Board)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gradute_University)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Passing_Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Result)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salary_Scale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Commision_Percentage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Increment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Birth_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Married_or_Unmarried)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Blood_Group)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Religion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nationality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone_Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FatherName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MotherName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PresentAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PermanentAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SSC_Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SSC_Result)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SSc_Board)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HSC_Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HSC_Result)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HSC_Board)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gradute_University)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Passing_Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Result)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salary_Scale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Commision_Percentage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Increment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Birth_Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Married_or_Unmarried)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Blood_Group)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Religion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nationality)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone_Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.EID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.EID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.EID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

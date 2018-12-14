@@ -1,0 +1,56 @@
+﻿@model AccountManagment.Models.User
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/LoginPageCss/loginpage.css" rel="stylesheet" />
+
+    <title>Account Managment</title>
+</head>
+<body>
+    
+    <div class="loginBox">
+
+        <img src="~/WebContent/user-icon.png" class="user" />
+        @using (Html.BeginForm("Autherize", "Login", FormMethod.Post))
+        {
+
+
+            <h2>Log In Here</h2>
+            <form>
+                <p>User Name</p>
+                @Html.EditorFor(model => model.UserName);
+                <p>   @Html.ValidationMessageFor(model => model.UserName)    </p>
+                <p>Password</p>
+
+                @Html.EditorFor(Model => Model.Password);
+                <p>   @Html.ValidationMessageFor(model => model.Password)   </p>
+
+                <input type="submit" name="" value="Sign in" />
+                
+
+                <h4>Register Here</h4>
+                    
+
+
+
+
+
+                <a href="#">Forget Password</a>
+            </form>
+
+
+        }
+
+</div>
+
+</body>
+</html>

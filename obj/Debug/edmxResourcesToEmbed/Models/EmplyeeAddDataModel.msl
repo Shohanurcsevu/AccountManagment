@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AccountManagmentModel2StoreContainer" CdmEntityContainer="AccountManagmentEntities4">
+    <EntitySetMapping Name="EmployeeRegisters">
+      <EntityTypeMapping TypeName="AccountManagmentModel2.EmployeeRegister">
+        <MappingFragment StoreEntitySet="EmployeeRegister">
+          <ScalarProperty Name="EID" ColumnName="EID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+          <ScalarProperty Name="PresentAddress" ColumnName="PresentAddress" />
+          <ScalarProperty Name="PermanentAddress" ColumnName="PermanentAddress" />
+          <ScalarProperty Name="SSC_Year" ColumnName="SSC Year" />
+          <ScalarProperty Name="SSC_Result" ColumnName="SSC Result" />
+          <ScalarProperty Name="SSc_Board" ColumnName="SSc Board" />
+          <ScalarProperty Name="HSC_Year" ColumnName="HSC Year" />
+          <ScalarProperty Name="HSC_Result" ColumnName="HSC Result" />
+          <ScalarProperty Name="HSC_Board" ColumnName="HSC Board" />
+          <ScalarProperty Name="Gradute_University" ColumnName="Gradute University" />
+          <ScalarProperty Name="Passing_Year" ColumnName="Passing Year" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="Salary_Scale" ColumnName="Salary Scale" />
+          <ScalarProperty Name="Commision_Percentage" ColumnName="Commision Percentage" />
+          <ScalarProperty Name="Increment" ColumnName="Increment" />
+          <ScalarProperty Name="Birth_Date" ColumnName="Birth Date" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Married_or_Unmarried" ColumnName="Married or Unmarried" />
+          <ScalarProperty Name="Blood_Group" ColumnName="Blood Group" />
+          <ScalarProperty Name="Religion" ColumnName="Religion" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone Number" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

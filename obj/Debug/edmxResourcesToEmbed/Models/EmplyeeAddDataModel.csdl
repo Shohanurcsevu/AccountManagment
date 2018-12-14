@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AccountManagmentModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EmployeeRegister">
+    <Key>
+      <PropertyRef Name="EID" />
+    </Key>
+    <Property Name="EID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FatherName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MotherName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PresentAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PermanentAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SSC_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SSC_Result" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SSc_Board" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HSC_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HSC_Result" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HSC_Board" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gradute_University" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Passing_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Result" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Grade" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Salary_Scale" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Commision_Percentage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Increment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Birth_Date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Married_or_Unmarried" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Blood_Group" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Religion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Nationality" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="AccountManagmentEntities4" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EmployeeRegisters" EntityType="Self.EmployeeRegister" />
+  </EntityContainer>
+</Schema>

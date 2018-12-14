@@ -1,0 +1,35 @@
+﻿
+*{
+    margin:0;
+    padding: 0;
+}
+header {
+    background-image: url('../Image/pexels-photo-40034.jpeg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.row{
+    max-width:1200px;
+    margin:auto;
+}
+.reghom{
+    position:initial;
+    width:500px;
+    margin-left:0px;
+    margin-top:0px;
+
+}
+h1{
+    color:darkgreen;
+    text-transform:uppercase;
+    font-size:50px;
+    text-align:initial;
+    margin-top:20px;
+}
+
+body {
+    font-family:monospace;
+
+
+}
